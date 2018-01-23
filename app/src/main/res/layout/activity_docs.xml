@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="kasper.android.file_explorer.activities.DocsActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            app:contentInsetEnd="0dp"
+            app:contentInsetStart="0dp"
+            android:layout_marginLeft="-16dp"
+            android:layout_marginRight="-16dp"
+            app:layout_scrollFlags="snap|enterAlways|scroll">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_centerInParent="true"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:text="فایل ها"/>
+
+                <ImageButton
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@android:color/transparent"
+                    android:layout_marginRight="16dp"
+                    android:src="@drawable/back"
+                    android:rotation="180"
+                    android:onClick="onBackBtnClicked"/>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/activity_docs_tab_layout"
+            android:layout_width="300dp"
+            android:layout_height="64dp"
+            app:tabTextAppearance="@style/AppTheme.TabText"
+            app:tabSelectedTextColor="#fff"
+            app:tabTextColor="#ddd"
+            app:tabIndicatorHeight="2dp"
+            app:tabIndicatorColor="#fff"
+            android:layout_gravity="center_horizontal"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/activity_docs_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+</android.support.design.widget.CoordinatorLayout>

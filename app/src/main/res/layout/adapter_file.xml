@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/adapter_file_directory_main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="128dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+
+        <RelativeLayout
+            android:id="@+id/adapter_file_icon_layout"
+            android:layout_width="112dp"
+            android:layout_height="112dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp">
+
+            <ImageView
+                android:id="@+id/adapter_file_directory_icon_image_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"/>
+
+            <ImageView
+                android:id="@+id/adapter_file_directory_shortcut_image_view"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/primary_circle"
+                android:elevation="4dp"
+                android:padding="4dp"
+                android:scaleType="fitXY"
+                android:visibility="gone"
+                app:srcCompat="@drawable/shortcut_light"
+                tools:targetApi="lollipop" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="128dp"
+                android:layout_height="56dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingEnd="32dp"
+                android:paddingStart="16dp">
+
+                <TextView
+                    android:id="@+id/adapter_file_directory_title_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="Loading..."
+                    android:textColor="@color/colorDarkCardLight"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/adapter_file_directory_details_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"
+                    android:gravity="center_horizontal"
+                    android:text="Loading..."
+                    android:textColor="@color/colorDarkCardLight"
+                    android:textSize="12.5sp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/adapter_file_context_menu_image_view"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_alignParentRight="true"
+                android:padding="16dp"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/more_dark" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

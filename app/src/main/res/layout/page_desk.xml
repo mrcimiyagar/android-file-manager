@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/WhiteSmoke"
+    android:clickable="true">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:paddingBottom="16dp"
+                android:gravity="center">
+
+                <RelativeLayout
+                    android:id="@+id/page_desk_storage_primary_layout"
+                    android:layout_width="160dp"
+                    android:layout_height="180dp"
+                    android:gravity="center_horizontal"
+                    android:clickable="true">
+
+                    <FrameLayout
+                        android:id="@+id/page_desk_storage_primary_card_layout"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp">
+
+                        <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                            android:id="@+id/page_desk_storage_primary_progressbar"
+                            android:layout_width="116dp"
+                            android:layout_height="116dp"
+                            app:cpb_background_progressbar_color="#FFCDD2"
+                            app:cpb_background_progressbar_width="5dp"
+                            app:cpb_progressbar_color="#F44336"
+                            app:cpb_progress="65"
+                            android:elevation="4dp"
+                            app:cpb_progressbar_width="10dp"
+                            android:layout_gravity="center"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:ellipsize="end"
+                            android:text="Primary"
+                            android:textSize="17sp"
+                            android:layout_gravity="center"/>
+
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/page_desk_storage_primary_size_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="9.2GB / 16GB"
+                        android:textSize="15sp"
+                        android:layout_below="@+id/page_desk_storage_primary_card_layout"
+                        android:layout_centerHorizontal="true"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/page_desk_storage_secondary_layout"
+                    android:layout_width="160dp"
+                    android:layout_height="180dp"
+                    android:clickable="true"
+                    android:gravity="center_horizontal">
+
+                    <FrameLayout
+                        android:id="@+id/page_desk_storage_secondary_card_layout"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp">
+
+                        <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                            android:id="@+id/page_desk_storage_secondary_progressbar"
+                            android:layout_width="116dp"
+                            android:layout_height="116dp"
+                            app:cpb_background_progressbar_color="#FFCDD2"
+                            app:cpb_background_progressbar_width="5dp"
+                            app:cpb_progressbar_color="#F44336"
+                            app:cpb_progress="65"
+                            android:elevation="4dp"
+                            app:cpb_progressbar_width="10dp"
+                            android:layout_gravity="center"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:ellipsize="end"
+                            android:text="Secondary"
+                            android:textSize="17sp"
+                            android:layout_gravity="center"/>
+
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/page_desk_storage_secondary_size_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="9.2GB / 16GB"
+                        android:textSize="15sp"
+                        android:layout_below="@+id/page_desk_storage_secondary_card_layout"
+                        android:layout_centerHorizontal="true"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_vertical|left"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginRight="16dp">
+
+                <LinearLayout
+                    android:id="@+id/page_desk_part_apps_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="56dp"
+                    android:clickable="true"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/page_desk_part_apps_image_view"
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:src="@drawable/app_colorful"
+                        android:padding="16dp"
+                        android:layout_centerHorizontal="true"/>
+
+                    <TextView
+                        android:id="@+id/page_desk_part_apps_count_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="..."
+                        android:textSize="20sp"
+                        android:gravity="center"
+                        android:layout_below="@+id/page_desk_part_apps_image_view"
+                        android:layout_centerHorizontal="true"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/page_desk_part_photos_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="56dp"
+                    android:clickable="true"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/page_desk_part_photos_image_view"
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:src="@drawable/photo_colorful"
+                        android:padding="16dp"
+                        android:layout_centerHorizontal="true"/>
+
+                    <TextView
+                        android:id="@+id/page_desk_part_photos_count_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="..."
+                        android:textSize="20sp"
+                        android:gravity="center"
+                        android:layout_below="@+id/page_desk_part_photos_image_view"
+                        android:layout_centerHorizontal="true"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/page_desk_part_musics_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="56dp"
+                    android:clickable="true"
+                    android:gravity="center_vertical|left">
+
+                    <ImageView
+                        android:id="@+id/page_desk_part_music_image_view"
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:src="@drawable/music_colorful"
+                        android:padding="16dp"
+                        android:layout_centerHorizontal="true"/>
+
+                    <TextView
+                        android:id="@+id/page_desk_part_musics_count_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="..."
+                        android:textSize="20sp"
+                        android:gravity="center"
+                        android:layout_below="@+id/page_desk_part_music_image_view"
+                        android:layout_centerHorizontal="true"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/page_desk_part_videos_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="56dp"
+                    android:clickable="true"
+                    android:gravity="center_vertical|left">
+
+                    <ImageView
+                        android:id="@+id/page_desk_part_videos_image_view"
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:src="@drawable/video_colorful"
+                        android:padding="16dp"
+                        android:layout_centerHorizontal="true"/>
+
+                    <TextView
+                        android:id="@+id/page_desk_part_videos_count_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="..."
+                        android:textSize="20sp"
+                        android:gravity="center"
+                        android:layout_below="@+id/page_desk_part_videos_image_view"
+                        android:layout_centerHorizontal="true"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/page_desk_part_desktop_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="56dp"
+                    android:clickable="true"
+                    android:gravity="center_vertical|left">
+
+                    <ImageView
+                        android:id="@+id/page_desk_part_desktop_image_view"
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:src="@drawable/desk_light"
+                        android:padding="16dp"
+                        android:layout_centerHorizontal="true"/>
+
+                    <TextView
+                        android:id="@+id/page_desk_part_desktop_count_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="desktop"
+                        android:textSize="20sp"
+                        android:gravity="center"
+                        android:layout_below="@+id/page_desk_part_videos_image_view"
+                        android:layout_centerHorizontal="true"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

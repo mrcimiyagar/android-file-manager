@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/WhiteSmoke"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ProgressBar
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:indeterminate="true"
+            android:progressTint="@color/colorPrimary"
+            tools:targetApi="lollipop" />
+
+        <TextView
+            android:id="@+id/dialog_pending_task_message_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:textColor="@color/colorDarkCardLight"
+            android:paddingLeft="16dp"
+            android:gravity="left|center_vertical"
+            android:text="Changing wallpaper..."
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textSize="22.5sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

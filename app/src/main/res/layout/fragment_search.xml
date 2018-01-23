@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main_header_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/WhiteSmoke">
+
+    <RelativeLayout
+        android:id="@+id/activity_main_searchbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/WhiteSmoke"
+        android:elevation="6dp">
+
+        <EditText
+            android:id="@+id/activity_main_search_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="@drawable/white_rect"
+            android:paddingStart="50dp"
+            android:paddingEnd="45dp"
+            android:gravity="start|center_vertical"
+            android:elevation="6dp"
+            android:hint="Search files..."
+            android:inputType="text"
+            android:maxLines="1"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"/>
+
+        <ImageButton
+            android:id="@+id/activity_main_search_back_floating_action_button"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="11dp"
+            android:layout_marginStart="16dp"
+            app:srcCompat="@drawable/back"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/accent_circ"
+            android:scaleType="fitXY"
+            android:padding="16dp"
+            android:elevation="7dp"/>
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/activity_main_search_items_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/activity_main_searchbar_layout"
+        tools:listitem="@layout/adapter_file" />
+
+    <com.futuremind.recyclerviewfastscroll.FastScroller
+        android:id="@+id/fragment_files_search_items_files_fast_scroller"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="105dp"
+        android:layout_marginBottom="16dp"
+        android:layout_alignParentEnd="true"
+        android:soundEffectsEnabled="false"
+        app:fastscroll__handleColor="@color/colorPrimary"
+        app:fastscroll__bubbleColor="@color/colorPrimary"
+        app:fastscroll__bubbleTextAppearance="@style/StyledScrollerTextAppearance" />
+
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/adapter_cont_main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    
+    <ImageView
+        android:id="@+id/adapter_block_icon_image_view"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/gray_circle"
+        android:scaleType="fitXY"
+        android:padding="24dp"
+        app:srcCompat="@drawable/app_light" 
+        android:layout_marginTop="48dp"
+        android:layout_marginStart="32dp"
+        android:elevation="6dp"
+        tools:targetApi="lollipop"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="139dp"
+        android:orientation="vertical"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/rect_light"
+        android:elevation="4dp"
+        tools:targetApi="lollipop"
+        android:gravity="center"
+        android:paddingStart="72dp"
+        android:paddingEnd="32dp">
+
+        <TextView
+            android:id="@+id/adapter_block_data_part_1_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:text="92 Apps"
+            android:typeface="monospace"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textColor="@color/colorPrimaryText"/>
+
+        <TextView
+            android:id="@+id/adapter_block_data_part_2_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_marginTop="16dp"
+            android:text="1.62 GB"
+            android:typeface="monospace"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textColor="@color/colorPrimaryText"/>
+
+    </LinearLayout>
+     
+</RelativeLayout>

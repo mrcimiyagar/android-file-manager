@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/dialog_working_main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/WhiteSmoke"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/dialog_working_title_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:textColor="@color/colorDarkCardLight"
+        android:paddingLeft="16dp"
+        android:gravity="left|center_vertical"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textSize="20sp"
+        android:layout_weight="1" />
+
+    <ProgressBar
+        android:id="@+id/dialog_file_task_progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:progressTint="@color/colorAccent"
+        android:max="100"
+        android:indeterminate="false"
+        style="?android:attr/progressBarStyleHorizontal"
+        tools:targetApi="lollipop"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"/>
+
+    <TextView
+        android:id="@+id/dialog_working_message_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:textColor="@color/colorDarkCardLight"
+        android:paddingLeft="16dp"
+        android:gravity="left|center_vertical"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textSize="17sp" />
+
+</LinearLayout>

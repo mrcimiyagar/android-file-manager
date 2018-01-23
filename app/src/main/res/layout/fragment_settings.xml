@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/WhiteSmoke">
+
+    <RelativeLayout
+        android:id="@+id/page_settings_action_layout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/WhiteSmoke"
+        android:elevation="6dp">
+
+        <ImageButton
+            android:id="@+id/page_settings_back_image_button"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/back"
+            android:tint="#000"
+            android:scaleType="fitXY"
+            android:padding="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="start|center_vertical"
+            android:text="Settings"
+            android:textColor="#000"
+            android:layout_toEndOf="@+id/page_settings_back_image_button"
+            android:id="@+id/textView"
+            android:textSize="22.5sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/page_settings_setup_sd_card_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:scaleType="fitXY"
+            android:padding="16dp"
+            app:srcCompat="@drawable/sd_card_dark"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:gravity="start|center_vertical"
+            android:text="Setup sd card"
+            android:textSize="17.5sp"
+            android:textColor="@color/colorDarkCardLight"
+            android:id="@+id/textView2" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/page_settings_disable_sd_card_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:scaleType="fitXY"
+            android:padding="16dp"
+            app:srcCompat="@drawable/sd_card_dark"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:gravity="start|center_vertical"
+            android:text="Disable sd card"
+            android:textSize="17.5sp"
+            android:textColor="@color/colorDarkCardLight"
+            android:id="@+id/textView3" />
+
+    </LinearLayout>
+
+</LinearLayout>

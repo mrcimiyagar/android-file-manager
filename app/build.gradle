@@ -1,0 +1,52 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion '26.0.2'
+    defaultConfig {
+        applicationId "kasper.android.file_explorer"
+        minSdkVersion 21
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        renderscriptSupportModeEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.android.support:design:26.1.0'
+    implementation 'com.android.support:recyclerview-v7:26.1.0'
+    implementation 'com.android.support:support-v4:26.1.0'
+    implementation 'com.android.support:support-vector-drawable:26.1.0'
+    implementation 'com.android.support:cardview-v7:26.1.0'
+    compile 'net.yslibrary.keyboardvisibilityevent:keyboardvisibilityevent:2.0.1'
+    compile 'com.github.clans:fab:1.6.4'
+    compile 'com.futuremind.recyclerfastscroll:fastscroll:0.2.5'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'jp.wasabeef:recyclerview-animators:2.2.6'
+    compile 'com.mikhaellopez:circularprogressbar:1.1.1'
+    compile 'com.github.rubensousa:bottomsheetbuilder:1.6.0'
+    compile 'com.github.captain-miao:optroundcardview:1.0.0'
+    compile 'com.imankur.library:analogclockview:1.0.0'
+    compile 'com.eightbitlab:blurview:1.3.3'
+    compile 'com.eightbitlab:supportrenderscriptblur:1.0.0'
+    compile 'com.survivingwithandroid:weatherlib:1.4.0'
+    compile 'com.survivingwithandroid:weatherlib_volleyclient:1.4.0'
+    compile 'com.shehabic.droppy:Droppy:0.6.0@aar'
+    testCompile 'junit:junit:4.12'
+}

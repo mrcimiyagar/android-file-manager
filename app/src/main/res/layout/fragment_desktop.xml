@@ -1,0 +1,151 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="kasper.android.file_explorer.fragments.DesktopFragment">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="136dp"
+            android:visibility="visible">
+
+            <com.imankur.analogclockview.AnalogClock
+                android:layout_width="144dp"
+                android:layout_height="144dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:text="23 آذر 1396"/>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="96dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                app:cardElevation="12dp"
+                app:cardBackgroundColor="@color/yellow"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="14dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="100dp"
+                    android:gravity="center_vertical"
+                    android:paddingRight="16dp"
+                    android:paddingLeft="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="288 فایل"
+                        android:drawableRight="@drawable/ic_workspace"
+                        android:drawablePadding="12dp"
+                        android:textSize="17.5sp"
+                        android:textColor="#000"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="2.5 GB"
+                        android:drawableRight="@drawable/ic_storage"
+                        android:drawablePadding="12dp"
+                        android:gravity="right"
+                        android:textSize="17.5sp"
+                        android:textColor="#000"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:layout_gravity="right"
+                    android:src="@drawable/ic_workspace"
+                    android:scaleType="fitXY"
+                    android:padding="24dp"
+                    android:background="#3000"/>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="96dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                app:cardElevation="12dp"
+                app:cardBackgroundColor="@color/leaf"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="24dp"
+                app:cardCornerRadius="14dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="100dp"
+                    android:gravity="center_vertical"
+                    android:paddingRight="16dp"
+                    android:paddingLeft="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="288 فایل"
+                        android:drawableRight="@drawable/ic_recycle_bin"
+                        android:drawablePadding="12dp"
+                        android:textSize="17.5sp"
+                        android:textColor="#000"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="2.5 GB"
+                        android:drawableRight="@drawable/ic_storage"
+                        android:drawablePadding="12dp"
+                        android:gravity="right"
+                        android:textSize="17.5sp"
+                        android:textColor="#000"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:layout_gravity="right"
+                    android:src="@drawable/ic_recycle_bin"
+                    android:scaleType="fitXY"
+                    android:padding="24dp"
+                    android:background="#3000"/>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+
+</FrameLayout>

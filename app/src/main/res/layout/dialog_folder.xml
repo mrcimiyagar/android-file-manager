@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/create_folder_dialog_main_layout"
+    android:layout_width="match_parent"
+    android:background="@color/WhiteSmoke"
+    android:clickable="true"
+    android:padding="16dp"
+    android:gravity="bottom|center_horizontal"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="Create folder"
+        android:textSize="22.5sp"
+        android:textColor="@color/colorDarkCardLight"
+        android:layout_marginTop="16dp"
+        android:layout_width="300dp" />
+
+    <EditText
+        android:id="@+id/EntryDialogFragmentEntryEditText"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:inputType="text"
+        android:hint="@string/newt_folder_text_box_hint"
+        android:textColor="@color/colorDarkCardLight"
+        android:textColorHint="@color/colorDarkCardLight"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/colorDarkCardLight"
+        tools:targetApi="lollipop"
+        android:layout_width="300dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="right|center_vertical"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:layout_width="300dp">
+
+        <Button
+            android:id="@+id/EntryDialogFragmentAction2Button"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/new_folder_cancel_button_text"
+            android:background="@android:color/transparent"
+            android:textAllCaps="false"
+            android:gravity="center"
+            android:textColor="@color/colorDarkCardLight"
+            android:layout_marginRight="8dp"
+            android:textSize="17.5sp"
+            android:layout_marginEnd="8dp"
+            android:clickable="true"/>
+
+        <Button
+            android:id="@+id/EntryDialogFragmentAction1Button"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/new_folder_ok_button_text"
+            android:background="@drawable/rect_primary"
+            android:textColor="@color/WhiteSmoke"
+            android:textSize="17.5sp"
+            android:textAllCaps="false"
+            android:gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:clickable="true"/>
+
+    </LinearLayout>
+
+</LinearLayout>

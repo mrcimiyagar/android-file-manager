@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/FileExplorerAndroidProject.iml" filepath="$PROJECT_DIR$/FileExplorerAndroidProject.iml" />
+      <module fileurl="file://F:\Android Works\file-explorer-android-project-master-85d75e96770f0a80b7cf43efd93d965dfc65598c\KasperFileExplorer.iml" filepath="F:\Android Works\file-explorer-android-project-master-85d75e96770f0a80b7cf43efd93d965dfc65598c\KasperFileExplorer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://F:\Android Works\file-explorer-android-project-master-85d75e96770f0a80b7cf43efd93d965dfc65598c\app\app.iml" filepath="F:\Android Works\file-explorer-android-project-master-85d75e96770f0a80b7cf43efd93d965dfc65598c\app\app.iml" />
+    </modules>
+  </component>
+</project>

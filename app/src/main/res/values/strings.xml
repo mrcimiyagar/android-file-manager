@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Kasper File Explorer</string>
+    <string name="newt_folder_text_box_hint">Folder Title</string>
+    <string name="new_folder_ok_button_text">Create</string>
+    <string name="new_folder_cancel_button_text">Discard</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fragment_apps_title">Applications</string>
+    <string name="fragment_apps_search_hint">Search applications…</string>
+    <string name="fragment_files_search_hint">Search files…</string>
+</resources>
